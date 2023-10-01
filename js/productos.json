@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Buzo Bart",
+        "precio": 20500,
+        "imagen": "../img/Buzo 1.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Beanie Rook",
+        "precio": 5800,
+        "imagen": "../img/beani.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Remera Hades",
+        "precio": 14000,
+        "imagen": "../img/remera 1.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Remera Big Bang",
+        "precio": 16000,
+        "imagen": "../img/remera 2.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Pantalon Dazzled",
+        "precio": 17500,
+        "imagen": "../img/Pantalon.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Remera Indisturb",
+        "precio": 14800,
+        "imagen": "../img/remera 3.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Chaleco Cross",
+        "precio": 17000,
+        "imagen": "../img/vest.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Pantalon UFO",
+        "precio": 17800,
+        "imagen": "../img/pantalon 2.png"
+    }
+]
