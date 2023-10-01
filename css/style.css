@@ -280,7 +280,9 @@ nav .icons span {
     border-radius: 3px;
 }
 
-
+.btnFin :disabled{
+    background-color: #3e3e3e;
+}
 /* -------------------media queries------------- */
 
 @media (max-width: 1600px) {
@@ -323,6 +325,9 @@ nav .icons span {
         overflow-y: auto;
         height: 60%;
     }
+    nav .icons span {
+        left: 4%;
+    }
 }
 @media (max-width: 900px) {
     .main-contenedor-productos {
@@ -342,6 +347,8 @@ nav .icons span {
         flex-grow: 1;
         overflow-y: auto;
         height: 60%;
+    }nav .icons span {
+        left: 9%;
     }
 }
     
