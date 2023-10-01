@@ -14,7 +14,7 @@ let listaCarritoItems = [];
 let data;
 
 //Carga de datos del JSON
-fetch("js/productos.json")
+fetch("https://raw.githubusercontent.com/GiulianaCravotta/ProyectoFinalCravotta-JS/master/js/productos.json")
     .then(response => response.json())
     .then(dataResponse => {
         data = dataResponse;
