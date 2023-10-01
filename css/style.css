@@ -280,9 +280,10 @@ nav .icons span {
     border-radius: 3px;
 }
 
+
 /* -------------------media queries------------- */
 
-@media (max-width: 1490px) {
+@media (max-width: 1600px) {
     .main-contenedor-productos {
         display: grid;
         grid-template-columns: repeat(4, 350px);
@@ -291,8 +292,8 @@ nav .icons span {
         gap: 30px;
     }
     .main-contenedor-productos .card-img-top {
-        height: 16rem;
-        width: 18rem;
+        height: 17rem;
+        width: 17rem;
         margin-bottom: 15px;
         transition: transform 0.3s;
     }
@@ -303,17 +304,37 @@ nav .icons span {
     }
     
 }
-@media (max-width: 730px) {
+@media (max-width: 1350px) {
     .main-contenedor-productos {
         display: grid;
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: repeat(3, 300px);
         justify-content: center;
         margin-bottom: 30px;
         gap: 20px;
     }
     .main-contenedor-productos .card-img-top {
-        height: 13rem;
+        height: 16rem;
         width: 16rem;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+    }
+    .lista-carrito{
+        flex-grow: 1;
+        overflow-y: auto;
+        height: 60%;
+    }
+}
+@media (max-width: 900px) {
+    .main-contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+    .main-contenedor-productos .card-img-top {
+        height: 12rem;
+        width: 12rem;
         margin-bottom: 15px;
         transition: transform 0.3s;
     }

@@ -32,19 +32,7 @@ fetch("https://raw.githubusercontent.com/GiulianaCravotta/ProyectoFinalCravotta-
             `;
 
             listado.appendChild(fila);
-            //Libreria Toastify
-            const botonAgregar = fila.querySelector('.agregar-al-carrito');
-            botonAgregar.addEventListener('click', () => {
-                Toastify({
-                    text: "Producto agregado al carrito!",
-                    duration: 3500,
-                    style: {
-                        background: '#d560a0'
-                    },
-                    close: true
-                }).showToast();
 
-            });
         });
     })
 
@@ -68,10 +56,26 @@ const agregarAlCarrito = (indiceProducto) => {
     if (listaCarritoItems[indiceProducto] == null) {
         listaCarritoItems[indiceProducto] = JSON.parse(JSON.stringify(data[indiceProducto]))
         listaCarritoItems[indiceProducto].cantidad = 1
+        showToast("Producto agregado al carrito!")
+    } else {
+        showToast("El producto ya se encuentra en el carrito😊")
     }
     actualizarCarrito();
 }
 
+
+//Libreria Toastify
+function showToast(notif) {
+    Toastify({
+        text: notif,
+        duration: 3500,
+        style: {
+            background: '#d560a0'
+        },
+        close: true
+    }).showToast();
+
+}
 //Actualizar el contenido del carrito
 const actualizarCarrito = () => {
     listaCarrito.innerHTML = "";
