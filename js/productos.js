@@ -53,9 +53,14 @@ cerrarCarrito.addEventListener("click", () => {
 
 //Agregar un nuevo producto al carrito
 const agregarAlCarrito = (indiceProducto) => {
-    if (listaCarritoItems[indiceProducto] == null) {
-        listaCarritoItems[indiceProducto] = JSON.parse(JSON.stringify(data[indiceProducto]))
-        listaCarritoItems[indiceProducto].cantidad = 1
+    const producto = data[indiceProducto];
+    const productoEnCarrito = listaCarritoItems.find((item) => item.id === producto.id);
+
+    if (!productoEnCarrito) {
+        listaCarritoItems.push({
+            ...producto,
+            cantidad: 1
+        });
         showToast("Producto agregado al carrito!")
     } else {
         showToast("El producto ya se encuentra en el carrito😊")
