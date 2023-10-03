@@ -309,14 +309,14 @@ nav .icons span {
 @media (max-width: 1350px) {
     .main-contenedor-productos {
         display: grid;
-        grid-template-columns: repeat(3, 300px);
+        grid-template-columns: repeat(3, 270px);
         justify-content: center;
         margin-bottom: 30px;
         gap: 20px;
     }
     .main-contenedor-productos .card-img-top {
-        height: 16rem;
-        width: 16rem;
+        height: 15rem;
+        width: 15rem;
         margin-bottom: 15px;
         transition: transform 0.3s;
     }
@@ -329,7 +329,7 @@ nav .icons span {
         left: 4%;
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 770px) {
     .main-contenedor-productos {
         display: grid;
         grid-template-columns: repeat(2, 200px);
@@ -349,6 +349,17 @@ nav .icons span {
         height: 60%;
     }nav .icons span {
         left: 9%;
+    }
+    .carrito {
+        width: 350px;
+    }
+    
+    .active .carrito {
+        left: 0;
+        width: 100%;
+    }
+    .carrito .checkout .btnFin {
+        height: 50px;
     }
 }
     
